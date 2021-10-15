@@ -7,7 +7,7 @@ import Main from "./Main";
 
 function App() {
   return (
-    <div className="row bg-dark vh-100 w-100 position-relative text-light">
+    <div className=" row vh-100 w-100 text-light m-0  ">
       <MyNav />
       <Header />
       <Main />
