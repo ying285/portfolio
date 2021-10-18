@@ -12,6 +12,7 @@ const message = {
       " En praktisk och trevlig Väderprognos Chrome Extension, byggd med Javascript",
     close_button: "stäng",
     github_button: " Se koder i Github",
+    netlify_button: "Se Appen",
   },
 
   en: {
@@ -22,6 +23,7 @@ const message = {
       "A practical and pleasant Weather Forecast Chrome Extension, built with Javascript",
     close_button: "close",
     github_button: " See codes in Github",
+    netlify_button: "See the App",
   },
 };
 
@@ -107,6 +109,16 @@ const WeatherPro = (props) => {
             >
               <FormattedMessage
                 id="github_button"
+                defaultMessage="some text"
+                value={{ locale }}
+              ></FormattedMessage>
+            </Button>
+            <Button
+              href="https://weatherextension.netlify.app/"
+              variant="success"
+            >
+              <FormattedMessage
+                id="netlify_button"
                 defaultMessage="some text"
                 value={{ locale }}
               ></FormattedMessage>

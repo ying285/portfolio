@@ -11,6 +11,7 @@ const message = {
     content: " En restaurangapplikation med kundvagn, byggd med Javascript",
     close_button: "stäng",
     github_button: " Se koder i Github",
+    netlify_button: "Se siten",
   },
 
   en: {
@@ -21,6 +22,7 @@ const message = {
       "A restaurant application with shopping cart, built with Javascript",
     close_button: "close",
     github_button: " See codes in Github",
+    netlify_button: "See the website",
   },
 };
 
@@ -106,6 +108,13 @@ const RestaurantPro = (props) => {
             >
               <FormattedMessage
                 id="github_button"
+                defaultMessage="some text"
+                value={{ locale }}
+              ></FormattedMessage>
+            </Button>
+            <Button variant="success" href="https://myrestaurang.netlify.app/">
+              <FormattedMessage
+                id="netlify_button"
                 defaultMessage="some text"
                 value={{ locale }}
               ></FormattedMessage>

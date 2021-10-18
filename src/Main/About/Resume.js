@@ -7,14 +7,14 @@ const message = {
     click: "klick för mer info",
     button: "CV",
     title: "CV",
-    subTitle1: "Utbilsningar",
+    subtitle1: "Utbilsningar",
     content1_1: "aug 2021 - idag, Stockholm",
     content1_2: "Frontend utbildning på Lexcion",
     content2_1: "aug 2012 - aug 2014, Stockholm",
     content2_2: "Import & Export på Exportakademin",
     content3_1: "feb 2004 - aug 2007, Rosilde",
     content3_2: "Economi & Administration at Roskild Universitet",
-    subTitle2: "Arbetshistoria",
+    subtitle2: "Arbetshistoria",
     content4_1: "mars 2021 - idag, Stockholm",
     content4_2: "Medarbetare på DB Schenker (deltid)",
     content5_1: "mars 2020 - oct 2020, Stockholm",
@@ -33,14 +33,14 @@ const message = {
     click: "click for more info",
     button: "CV",
     title: "CV",
-    subTitle1: "Educations",
+    subtitle1: "Educations",
     content1_1: "Aug 2021 - today, Stockholm",
     content1_2: "Frontend course at Lexcion",
     content2_1: "Aug 2012 - Aug 2014, Stockholm",
     content2_2: "Import & Export course at Exportakademin",
     content3_1: "Feb 2004 - Aug 2007, Rosilde",
     content3_2: "Economy & Administration at Roskild University",
-    subTitle2: "Work Expeirences",
+    subtitle2: "Work Expeirences",
     content4_1: "Mars 2021 - today, Stockholm",
     content4_2: "Employee at DB Schenker (part time)",
     content5_1: "Mars 2020 - Oct 2020, Stockholm",
@@ -58,6 +58,7 @@ const message = {
 
 const Resume = (props) => {
   let locale = props.resumeInfo;
+
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
       <FormattedMessage
@@ -75,7 +76,7 @@ const Resume = (props) => {
   return (
     <div>
       <>
-        <IntlProvider locale={{ locale }} messages={message[locale]}>
+        <IntlProvider locale={locale} messages={message[locale]}>
           <OverlayTrigger
             placement="bottom"
             delay={{ show: 250, hide: 400 }}
@@ -114,7 +115,7 @@ const Resume = (props) => {
                 <h4 className="font-monospace">
                   <FormattedMessage
                     id="subtitle1"
-                    defaultMessage="some text"
+                    defaultMessage="subtitle1"
                     value={{ locale }}
                   ></FormattedMessage>
                 </h4>

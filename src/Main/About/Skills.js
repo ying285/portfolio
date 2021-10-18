@@ -13,15 +13,15 @@ const message = {
     click: "klick för mer info",
     button: "Kundskaper",
     title: "Kundskaper",
-    subTitle1: "programmeringskunskaper",
+    subtitle1: "programmeringskunskaper",
     content1: "Frontend (Javascrip, HTML5, CSS(SASS))",
     content2: "Bootstrap & React-Bootsrap",
     content3: "React",
     content4: "Node",
-    subTitle2: "UI/UX kunskaper",
+    subtitle2: "UI/UX kunskaper",
     content5: "Figma",
     content6: "XD",
-    subTitle3: "Språk kunskaper",
+    subtitle3: "Språk kunskaper",
     content7: "kinesiska",
     content8: "svenska",
     content9: "engelska",
@@ -31,15 +31,15 @@ const message = {
     click: "click for more info",
     button: "Skills",
     title: "Skills",
-    subTitle1: "Programming skills",
+    subtitle1: "Programming skills",
     content1: "Frontend (Javascrip, HTML5, CSS(SASS))",
     content2: "Bootstrap & React-Bootsrap",
     content3: "React",
     content4: "Node",
-    subTitle2: "UI/UX Skills",
+    subtitle2: "UI/UX Skills",
     content5: "Figma",
     content6: "XD",
-    subTitle3: "Language Skills",
+    subtitle3: "Language Skills",
     content7: "Chinese",
     content8: "Swedish",
     content9: "Engelish",
@@ -66,7 +66,7 @@ const Skills = (props) => {
   return (
     <div>
       <>
-        <IntlProvider locale={{ locale }} messages={message[locale]}>
+        <IntlProvider locale={locale} messages={message[locale]}>
           <OverlayTrigger
             placement="bottom"
             delay={{ show: 250, hide: 400 }}

@@ -7,13 +7,13 @@ const message = {
   sv: {
     title: "Om mig",
     content:
-      "Här nedan hittar du hundratals lediga jobb som front end-utvecklare.Flera av jobben kan du söka helt utan CV och personligt brev sök under min! Filtrera efter omfattning eller ort och gör din sökning så specifik som möjligt. Lycka till!",
+      "Jag heter ying, idag lär jag mig en frontend utbildning hos Lexcion AB i Stockholm, så söker jag efter en praktik plats som frontend utvecklare (öppna för Backend ). Koll mer info om mig i den här siten och kontakt mig om ni är intersserade av mina erfaranheter, tack!",
   },
 
   en: {
     title: "About me",
     content:
-      "Below you will find hundreds of vacancies as a front end developer. You can apply for several of the jobs completely without a CV and personal letter search under mine! Filter by scope or location and make your search as specific as possible. Good luck!",
+      "My name is ying, I am studying a frontend course at Lexcion AB in Stockholm today, and looking for an internship as frontend developer (open for banckend). Check more info about me in this site and contact me if you are interested in my experiences, thanks!",
   },
 };
 const About = (props) => {
@@ -21,6 +21,7 @@ const About = (props) => {
 
   return (
     <div>
+      <div id="#About"></div>
       <IntlProvider locale={locale} messages={message[locale]}>
         <h2 className="font-monospace">
           <FormattedMessage

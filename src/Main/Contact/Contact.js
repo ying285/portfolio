@@ -14,6 +14,7 @@ const Contact = (props) => {
   let locale = props.mainLanguageContact;
   return (
     <div>
+      <div id="#Contact"></div>
       <IntlProvider locale={locale} messages={message[locale]}>
         <h2 className="font-monospace mt-5">
           <FormattedMessage
@@ -30,6 +31,11 @@ const Contact = (props) => {
           </i>
         </li>
         <li className="col-6 p-2">
+          <i className="bi bi-envelope text-success">
+            <small className="text-white"> ying285@hotmail.com </small>
+          </i>
+        </li>
+        <li className="col-6 p-2">
           <i className="bi bi-linkedin text-success">
             <small className="text-white"> linkedin </small>
           </i>
@@ -37,11 +43,6 @@ const Contact = (props) => {
         <li className="col-6 p-2">
           <i className="bi bi-phone text-success">
             <small className="text-white"> 076-288-1628 </small>
-          </i>
-        </li>
-        <li className="col-6 p-2">
-          <i className="bi bi-envelope text-success">
-            <small className="text-white"> ying285@hotmail.com </small>
           </i>
         </li>
       </ul>
