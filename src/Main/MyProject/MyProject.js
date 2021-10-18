@@ -13,7 +13,7 @@ const message = {
 };
 
 const MyProject = (props) => {
-  let locale = props.mianLanguageProject;
+  let locale = props.mainLanguageProject;
   return (
     <div className="mt-5">
       <IntlProvider locale={locale} messages={message[locale]}>
@@ -26,8 +26,8 @@ const MyProject = (props) => {
         </h2>
       </IntlProvider>
       <div className="d-flex justify-content-evenly">
-        <WeatherPro weatherProInfo={props.locale} />
-        <RestaurantPro restoProInfo={props.locale} />
+        <WeatherPro weatherProInfo={locale} />
+        <RestaurantPro restoProInfo={locale} />
       </div>
     </div>
   );

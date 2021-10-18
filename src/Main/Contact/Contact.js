@@ -11,7 +11,7 @@ const message = {
 };
 
 const Contact = (props) => {
-  let locale = props.mianLanguageContact;
+  let locale = props.mainLanguageContact;
   return (
     <div>
       <IntlProvider locale={locale} messages={message[locale]}>

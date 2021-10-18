@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ying from "./img/ying.png";
+import ying3 from "./img/ying3.jpg";
 import Select from "./Select";
 import { IntlProvider, FormattedMessage } from "react-intl";
 
@@ -24,7 +24,7 @@ function Header(props) {
       <Select changLang={onLanguageChange} />
       <div>
         <img
-          src={ying}
+          src={ying3}
           alt="ying"
           style={{
             height: "10rem",
@@ -36,13 +36,13 @@ function Header(props) {
       </div>
       <h2 className="display-4 text-dark fw-normal">YING WANG</h2>
       <IntlProvider locale={mySubTitle} messages={message[mySubTitle]}>
-        <samll className="text-secondary fw-bold">
+        <small className="text-secondary fw-bold">
           <FormattedMessage
             id="subTitle"
             defaultMessage="some text"
             value={{ mySubTitle }}
           ></FormattedMessage>
-        </samll>
+        </small>
       </IntlProvider>
     </div>
   );

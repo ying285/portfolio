@@ -17,7 +17,7 @@ const message = {
   },
 };
 const About = (props) => {
-  let locale = props.mianLanguageAbout;
+  let locale = props.mainLanguageAbout;
 
   return (
     <div>
@@ -38,9 +38,9 @@ const About = (props) => {
         </p>
       </IntlProvider>
       <div className="d-flex justify-content-around">
-        <Experience experienceInfo={props.locale} />
-        <Skills skillsInfo={props.locale} />
-        <Resume resumeInfo={props.locale} />
+        <Experience experienceInfo={locale} />
+        <Skills skillsInfo={locale} />
+        <Resume resumeInfo={locale} />
       </div>
     </div>
   );

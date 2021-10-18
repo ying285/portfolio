@@ -7,9 +7,9 @@ import Contact from "./Main/Contact/Contact";
 const Main = (props) => {
   return (
     <div className="vh-100 col-12 col-md-8 bg-dark p-4">
-      <About mianLanguageAbout={props.mainLanguage} />
-      <MyProject mianLanguageProject={props.mainLanguage} />
-      <Contact mianLanguageContact={props.mainLanguage} />
+      <About mainLanguageAbout={props.mainLanguage} />
+      <MyProject mainLanguageProject={props.mainLanguage} />
+      <Contact mainLanguageContact={props.mainLanguage} />
     </div>
   );
 };

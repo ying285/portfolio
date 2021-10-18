@@ -29,13 +29,13 @@ const message = {
 };
 
 const Experience = (props) => {
-  console.log(props.experienceInfo);
+  let locale = props.experienceInfo;
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
       <FormattedMessage
         id="click"
         defaultMessage="some text"
-        value={props.experienceInfo}
+        value={{ locale }}
       ></FormattedMessage>
     </Tooltip>
   );
@@ -47,10 +47,7 @@ const Experience = (props) => {
   return (
     <div>
       <>
-        <IntlProvider
-          locale={props.experienceInfo}
-          messages={message[props.experienceInfo]}
-        >
+        <IntlProvider locale={{ locale }} messages={message[locale]}>
           <OverlayTrigger
             placement="bottom"
             delay={{ show: 250, hide: 400 }}
@@ -65,7 +62,7 @@ const Experience = (props) => {
               <FormattedMessage
                 id="title"
                 defaultMessage="some text"
-                value={props.experienceInfo}
+                value={{ locale }}
               ></FormattedMessage>
             </Button>
           </OverlayTrigger>
@@ -78,30 +75,70 @@ const Experience = (props) => {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title className="font-monospace">
-                Programmeringsutbildningar
+                <FormattedMessage
+                  id="subTitle"
+                  defaultMessage="some text"
+                  value={{ locale }}
+                ></FormattedMessage>
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <div>
                 <ul>
                   <li>
-                    <h5>Frontend kurs på Lexcion(distans)</h5>
+                    <h5>
+                      <FormattedMessage
+                        id="content1"
+                        defaultMessage="some text"
+                        value={{ locale }}
+                      ></FormattedMessage>
+                    </h5>
                   </li>
                   <li>
-                    <h5>Javascript - From zero to expert på Udemy</h5>
+                    <h5>
+                      <FormattedMessage
+                        id="content2"
+                        defaultMessage="some text"
+                        value={{ locale }}
+                      ></FormattedMessage>
+                    </h5>
                   </li>
                   <li>
-                    <h5>Advanced CSS and SASS på Udemy</h5>
+                    <h5>
+                      <FormattedMessage
+                        id="content3"
+                        defaultMessage="some text"
+                        value={{ locale }}
+                      ></FormattedMessage>
+                    </h5>
                   </li>
                   <li>
-                    <h5>Complete bootstrap 5 på Udemy</h5>
+                    <h5>
+                      <FormattedMessage
+                        id="content4"
+                        defaultMessage="some text"
+                        value={{ locale }}
+                      ></FormattedMessage>
+                    </h5>
                   </li>
 
                   <li>
-                    <h5>React: Complete Guide 5 på Udemy</h5>
+                    <h5>
+                      <FormattedMessage
+                        id="content5"
+                        defaultMessage="some text"
+                        value={{ locale }}
+                      ></FormattedMessage>
+                    </h5>
                   </li>
                   <li>
-                    <h5>Node.js på Udemy</h5>
+                    <h5>
+                      <FormattedMessage
+                        id="content6"
+                        defaultMessage="some text"
+                        value={{ locale }}
+                      ></FormattedMessage>
+                    </h5>
                   </li>
                 </ul>
               </div>
