@@ -4,12 +4,9 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 
 function MyNav() {
   return (
-    <div
-      className="navbar navbar-dark bg-danger vh-100  col-1 d-md-none"
-      style={{ width: "80px" }}
-    >
-      <div className="Container">
-        <ul className="navbar-nav mb-2 mb-lg-0 fs-4 d-flex flex-column ms-3">
+    <div className="navbar navbar-dark bg-dark vh-100  col-2 d-md-none">
+      <div className="Container mx-auto text-center">
+        <ul className="navbar-nav  mb-lg-0 fs-4 d-flex flex-column ">
           <li className="nav-item" title="person">
             <a href="#" className="nav-link active">
               <i className="bi bi-person text-success"></i>
