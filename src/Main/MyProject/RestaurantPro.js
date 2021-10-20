@@ -9,7 +9,7 @@ const message = {
     button: "Resto",
     title: "Restaurang applikation",
     content: " En restaurangapplikation med kundvagn, byggd med Javascript",
-    close_button: "stäng",
+    close_button: "Stäng",
     github_button: " Se koder i Github",
     netlify_button: "Se siten",
   },
@@ -20,7 +20,7 @@ const message = {
     title: "Restaurant application",
     content:
       "A restaurant application with shopping cart, built with Javascript",
-    close_button: "close",
+    close_button: "Close",
     github_button: " See codes in Github",
     netlify_button: "See the website",
   },

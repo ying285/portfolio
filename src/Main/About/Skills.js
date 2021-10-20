@@ -13,7 +13,7 @@ const message = {
     click: "klick för mer info",
     button: "Kunskaper",
     title: "Kunskaper",
-    subtitle1: "programmeringskunskaper",
+    subtitle1: "Programmeringskunskaper",
     content1: "Frontend (Javascrip, HTML5, CSS(SASS))",
     content2: "Bootstrap & React-Bootsrap",
     content3: "React",

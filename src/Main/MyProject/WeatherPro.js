@@ -7,10 +7,10 @@ const message = {
   sv: {
     click: "klick för mer info",
     button: "Väder App",
-    title: "väderprognos",
+    title: "Väderprognos",
     content:
       " En praktisk och trevlig Väderprognos Chrome Extension med web API, byggd med Javascript",
-    close_button: "stäng",
+    close_button: "Stäng",
     github_button: " Se koder i Github",
     netlify_button: "Se Appen",
   },
@@ -18,10 +18,10 @@ const message = {
   en: {
     click: "click for more info",
     button: "Weather App",
-    title: "weather forecast",
+    title: "Weather Forecast",
     content:
       "A practical and pleasant Weather Forecast Chrome Extension med web API, built with Javascript",
-    close_button: "close",
+    close_button: "Close",
     github_button: " See codes in Github",
     netlify_button: "See the App",
   },
