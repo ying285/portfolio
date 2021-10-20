@@ -14,7 +14,7 @@ const Contact = (props) => {
   let locale = props.mainLanguageContact;
   return (
     <div>
-      <div id="#Contact"></div>
+      <div id="About"></div>
       <IntlProvider locale={locale} messages={message[locale]}>
         <h2 className="font-monospace mt-5">
           <FormattedMessage

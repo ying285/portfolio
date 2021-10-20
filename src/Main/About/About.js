@@ -7,13 +7,13 @@ const message = {
   sv: {
     title: "Om mig",
     content:
-      "Jag heter ying, idag lär jag mig en frontend utbildning hos Lexcion AB i Stockholm, så söker jag efter en praktik plats som frontend utvecklare (öppna för Backend ). Koll mer info om mig i den här siten och kontakt mig om ni är intersserade av mina erfaranheter, tack!",
+      "Jag heter Ying, idag lär jag mig en frontend utbildning hos Lexcion AB i Stockholm, så söker jag efter en praktik plats som frontend utvecklare (öppen för Backend ). Kolla mer info om mig i den här siten och kontakta mig om ni är intresserade av mina erfaranheter, tack!",
   },
 
   en: {
     title: "About me",
     content:
-      "My name is ying, I am studying a frontend course at Lexcion AB in Stockholm today, and looking for an internship as frontend developer (open for banckend). Check more info about me in this site and contact me if you are interested in my experiences, thanks!",
+      "My name is Ying, I am studying a frontend course at Lexcion AB in Stockholm today, and looking for an internship as frontend developer (open for banckend). Check more info about me in this site and contact me if you are interested in my experiences, thanks!",
   },
 };
 const About = (props) => {
@@ -21,7 +21,7 @@ const About = (props) => {
 
   return (
     <div>
-      <div id="#About"></div>
+      <div id="About"></div>
       <IntlProvider locale={locale} messages={message[locale]}>
         <h2 className="font-monospace">
           <FormattedMessage

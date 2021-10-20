@@ -105,6 +105,7 @@ const RestaurantPro = (props) => {
             <Button
               variant="success"
               href="https://github.com/ying285/team-project.git"
+              target="_blank"
             >
               <FormattedMessage
                 id="github_button"
@@ -112,7 +113,11 @@ const RestaurantPro = (props) => {
                 value={{ locale }}
               ></FormattedMessage>
             </Button>
-            <Button variant="success" href="https://myrestaurang.netlify.app/">
+            <Button
+              variant="success"
+              href="https://myrestaurang.netlify.app/"
+              target="_blank"
+            >
               <FormattedMessage
                 id="netlify_button"
                 defaultMessage="some text"

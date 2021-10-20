@@ -11,13 +11,14 @@ import { IntlProvider, FormattedMessage } from "react-intl";
 const message = {
   sv: {
     click: "klick för mer info",
-    button: "Kundskaper",
-    title: "Kundskaper",
+    button: "Kunskaper",
+    title: "Kunskaper",
     subtitle1: "programmeringskunskaper",
     content1: "Frontend (Javascrip, HTML5, CSS(SASS))",
     content2: "Bootstrap & React-Bootsrap",
     content3: "React",
     content4: "Node",
+    content10: "git",
     subtitle2: "UI/UX kunskaper",
     content5: "Figma",
     content6: "XD",
@@ -36,6 +37,7 @@ const message = {
     content2: "Bootstrap & React-Bootsrap",
     content3: "React",
     content4: "Node",
+    content10: "git",
     subtitle2: "UI/UX Skills",
     content5: "Figma",
     content6: "XD",
@@ -141,6 +143,14 @@ const Skills = (props) => {
                   ></FormattedMessage>
                 </small>
                 <ProgressBar striped variant="success" now={60} />
+                <small>
+                  <FormattedMessage
+                    id="content10"
+                    defaultMessage="some text"
+                    value={{ locale }}
+                  ></FormattedMessage>
+                </small>
+                <ProgressBar striped variant="success" now={80} />
               </div>
 
               <h4 className="mt-3 font-monospace">

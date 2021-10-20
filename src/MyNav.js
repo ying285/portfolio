@@ -12,13 +12,13 @@ function MyNav() {
             </a>
           </li>
           <li className="nav-item" title="cast">
-            <a href="#Project" className="nav-link">
+            <a href="#About" className="nav-link">
               <i className="bi bi-cast text-white-50"></i>
             </a>
           </li>
 
           <li className="nav-item" title="envelope">
-            <a href="#Contact" className="nav-link">
+            <a href="#About" className="nav-link">
               <i className="bi bi-envelope text-white-50"></i>
             </a>
           </li>

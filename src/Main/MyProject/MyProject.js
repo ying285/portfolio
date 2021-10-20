@@ -16,6 +16,7 @@ const MyProject = (props) => {
   let locale = props.mainLanguageProject;
   return (
     <div className="mt-5">
+      <div id="About"></div>
       <IntlProvider locale={locale} messages={message[locale]}>
         <h2 className="font-monospace mb-5">
           <FormattedMessage

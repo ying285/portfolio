@@ -106,6 +106,7 @@ const WeatherPro = (props) => {
             <Button
               href="https://github.com/ying285/chrome-extension-weather.git"
               variant="success"
+              target="_blank"
             >
               <FormattedMessage
                 id="github_button"
@@ -116,6 +117,7 @@ const WeatherPro = (props) => {
             <Button
               href="https://weatherextension.netlify.app/"
               variant="success"
+              target="_blank"
             >
               <FormattedMessage
                 id="netlify_button"

@@ -3,7 +3,7 @@ import { IntlProvider, FormattedMessage } from "react-intl";
 
 const message = {
   sv: {
-    title: "Kontakt mig om vill veta mer om mig",
+    title: "Kontakta mig om ni vill veta mer om mig",
   },
   en: {
     title: "Contact me if you want to know more about me",
