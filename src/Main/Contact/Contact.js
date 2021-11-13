@@ -44,7 +44,15 @@ const Contact = (props) => {
         </li>
         <li className="col-6 p-2">
           <i className="bi bi-linkedin text-success">
-            <small className="text-white"> linkedin </small>
+            <small className="ms-1">
+              <a
+                href="https://www.linkedin.com/in/wang-ying-a874a754/"
+                className="text-decoration-none text-white"
+                target="/_blank"
+              >
+                linkedin
+              </a>
+            </small>
           </i>
         </li>
         <li className="col-6 p-2">
