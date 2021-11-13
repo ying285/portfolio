@@ -32,10 +32,10 @@ const Contact = (props) => {
         </li>
         <li className="col-6 p-2">
           <i className="bi bi-envelope text-success">
-            <small className="text-white">
+            <small className="ms-1">
               <a
                 href="mailto: ying285@hotmail.com"
-                className="text-decoration-none"
+                className="text-decoration-none text-white"
               >
                 ying285@hotmail.com
               </a>

@@ -38,9 +38,14 @@ const About = (props) => {
           ></FormattedMessage>
         </p>
       </IntlProvider>
-      <div className="d-flex justify-content-around">
-        <Experience experienceInfo={locale} />
-        <Skills skillsInfo={locale} />
+      <div className="d-sm-flex justify-content-around mt-4">
+        <div className="mb-2">
+          <Experience experienceInfo={locale} />
+        </div>
+        <div className="mb-2">
+          <Skills skillsInfo={locale} />
+        </div>
+
         <Resume resumeInfo={locale} />
       </div>
     </div>
