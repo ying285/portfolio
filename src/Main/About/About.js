@@ -7,13 +7,13 @@ const message = {
   sv: {
     title: "Om mig",
     content:
-      "Jag heter Ying, idag lär jag mig en frontend utbildning hos Lexcion AB i Stockholm, så söker jag efter en praktik plats som frontend utvecklare (öppen för Backend ). Kolla mer info om mig i den här siten och kontakta mig om ni är intresserade av mina erfaranheter, tack!",
+      "Jag heter Ying, idag lär jag mig en frontend utbildning hos Lexcion AB i Stockholm, så söker jag efter en tjänst eller en praktik plats som frontend utvecklare (öppen för Backend ). Arbetsgivare får ansöka ett Nystartjobb för mig i 2år(ersättning är 78.55% och upp till 20 000kr per månad). Kontakta mig om ni är intresserade av mina erfaranheter, tack!",
   },
 
   en: {
     title: "About me",
     content:
-      "My name is Ying, I am studying a frontend course at Lexcion AB in Stockholm today, and looking for an internship as frontend developer (open for banckend). Check more info about me in this site and contact me if you are interested in my experiences, thanks!",
+      "My name is Ying, I am studying a frontend course at Lexcion AB in Stockholm today, and looking for a job or an internship as frontend developer (open for banckend). Employers can apply for a New Start job for me for 2 years (compensation is 78.55% and up to SEK 20,000 per month). Contact me if you are interested in my experiences, thanks!",
   },
 };
 const About = (props) => {
