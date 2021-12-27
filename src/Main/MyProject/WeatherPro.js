@@ -44,7 +44,7 @@ const WeatherPro = (props) => {
     </Tooltip>
   );
   return (
-    <div>
+    <div className="mt-4">
       <IntlProvider locale={locale} messages={message[locale]}>
         <OverlayTrigger
           placement="bottom"

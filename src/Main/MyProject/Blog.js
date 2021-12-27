@@ -1,33 +1,32 @@
 import React, { useState } from "react";
 import { OverlayTrigger, Button, Tooltip, Modal } from "react-bootstrap";
-import resto_mobil from "./../../img/resto-mobil.jpg";
+import blog from "./../../img/blog.jpg";
 import { IntlProvider, FormattedMessage } from "react-intl";
 
 const message = {
   sv: {
     click: "klick för mer info",
-    button: "Resto",
-    title: "Restaurang applikation",
-    content: " En restaurangapplikation med kundvagn, byggd med Javascript",
+    button: "Blogg",
+    title: "Alisas blogg",
+    content: "Min dotters blogg, bygga med Nextjs och mongoDB",
     close_button: "Stäng",
     github_button: " Se koder i Github",
-    netlify_button: "Se siten",
+    netlify_button: "Se Appen",
   },
 
   en: {
     click: "click for more info",
-    button: "Resto",
-    title: "Restaurant application",
-    content:
-      "A restaurant application with shopping cart, built with Javascript",
+    button: "Blog",
+    title: "Alisa's blog",
+    content: "My daughter's blog, builds with Nextjs and mongoDB",
     close_button: "Close",
     github_button: " See codes in Github",
-    netlify_button: "See the website",
+    netlify_button: "See the App",
   },
 };
 
-const RestaurantPro = (props) => {
-  let locale = props.restoProInfo;
+const Blog = (props) => {
+  const locale = props.blogInfo;
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -88,9 +87,9 @@ const RestaurantPro = (props) => {
             </p>
             <div className="text-center">
               <img
-                src={resto_mobil}
-                alt="resto-desk"
-                style={{ width: "10rem", hight: "15rem" }}
+                src={blog}
+                alt="weather forecast"
+                style={{ width: "15rem", hight: "10rem" }}
               />
             </div>
           </Modal.Body>
@@ -103,8 +102,8 @@ const RestaurantPro = (props) => {
               ></FormattedMessage>
             </Button>
             <Button
+              href="https://github.com/ying285/blog"
               variant="success"
-              href="https://github.com/ying285/team-project.git"
               target="_blank"
             >
               <FormattedMessage
@@ -114,8 +113,8 @@ const RestaurantPro = (props) => {
               ></FormattedMessage>
             </Button>
             <Button
+              href="https://alisawang.netlify.app/"
               variant="success"
-              href="https://myrestaurang.netlify.app/"
               target="_blank"
             >
               <FormattedMessage
@@ -131,4 +130,4 @@ const RestaurantPro = (props) => {
   );
 };
 
-export default RestaurantPro;
+export default Blog;

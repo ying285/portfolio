@@ -45,7 +45,7 @@ const Experience = (props) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div>
+    <div className="mt-4">
       <>
         <IntlProvider locale={{ locale }} messages={message[locale]}>
           <OverlayTrigger

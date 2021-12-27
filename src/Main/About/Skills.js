@@ -14,10 +14,10 @@ const message = {
     button: "Kunskaper",
     title: "Kunskaper",
     subtitle1: "Programmeringskunskaper",
-    content1: "Frontend (Javascrip, HTML5, CSS(SASS))",
-    content2: "Bootstrap & React-Bootsrap",
-    content3: "React",
-    content4: "Node",
+    content1: "Frontend (Typescrip, HTML5, CSS(SASS))",
+    content2: "Bootstrap",
+    content3: "React/Redux/Nextjs",
+    content4: "Nodejs",
     content10: "Git",
     subtitle2: "UI/UX kunskaper",
     content5: "Figma",
@@ -33,10 +33,10 @@ const message = {
     button: "Skills",
     title: "Skills",
     subtitle1: "Programming skills",
-    content1: "Frontend (Javascrip, HTML5, CSS(SASS))",
-    content2: "Bootstrap & React-Bootsrap",
-    content3: "React",
-    content4: "Node",
+    content1: "Frontend (Tpyescrip, HTML5, CSS(SASS))",
+    content2: "Bootstrap",
+    content3: "React/Redux/Nextjs",
+    content4: "Nodejs",
     content10: "Git",
     subtitle2: "UI/UX Skills",
     content5: "Figma",
@@ -66,7 +66,7 @@ const Skills = (props) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div>
+    <div className="mt-4">
       <>
         <IntlProvider locale={locale} messages={message[locale]}>
           <OverlayTrigger

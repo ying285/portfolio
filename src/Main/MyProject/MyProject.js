@@ -2,6 +2,7 @@ import React from "react";
 import WeatherPro from "./WeatherPro";
 import RestaurantPro from "./RestaurantPro";
 import MatPro from "./MatPro";
+import Blog from "./Blog";
 import { IntlProvider, FormattedMessage } from "react-intl";
 
 const message = {
@@ -16,7 +17,7 @@ const message = {
 const MyProject = (props) => {
   let locale = props.mainLanguageProject;
   return (
-    <div className="mt-5">
+    <div className="mt-5 ">
       <div id="About"></div>
       <IntlProvider locale={locale} messages={message[locale]}>
         <h2 className="font-monospace my-4">
@@ -27,15 +28,19 @@ const MyProject = (props) => {
           ></FormattedMessage>
         </h2>
       </IntlProvider>
-      <div className="d-sm-flex justify-content-evenly">
-        <div className="mb-2">
+      <div className="row">
+        <div className="mb-2 col-md-6 col-lg-3">
           <MatPro matProInfo={locale} />
         </div>
-        <div className="mb-2">
+        <div className="mb-2 col-md-6 col-lg-3">
           <WeatherPro weatherProInfo={locale} />
         </div>
-
-        <RestaurantPro restoProInfo={locale} />
+        <div className="col-md-6 col-lg-3">
+          <RestaurantPro restoProInfo={locale} />
+        </div>
+        <div className="col-md-6 col-lg-3">
+          <Blog blogInfo={locale} />
+        </div>
       </div>
     </div>
   );
