@@ -24,7 +24,7 @@ const Contact = (props) => {
           ></FormattedMessage>
         </h2>
       </IntlProvider>
-      <ul className="row list-unstyled text-sm-start text-center">
+      <ul className="row list-unstyled text-sm-start text-center mt-5">
         <li className="col-6 p-2">
           <i className="bi bi-geo-alt text-success">
             <small className="text-white"> Ekillavägen 19532 Märsta </small>

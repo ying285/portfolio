@@ -7,13 +7,13 @@ const message = {
   sv: {
     title: "Om mig",
     content:
-      "Jag heter Ying, idag lär jag mig en frontend utbildning hos Lexcion AB i Stockholm, så söker jag efter en tjänst eller en praktik plats som frontend utvecklare (öppen för Backend ). Arbetsgivare får ansöka 'Nystartjobb'. Kontakta mig om ni är intresserade av mina erfaranheter, tack!",
+      "Jag heter Ying, söker efter en praktik plats som frontend utvecklare (öppen för backend). Kontakta mig om ni är intresserade av mina erfaranheter, tack!",
   },
 
   en: {
     title: "About me",
     content:
-      "My name is Ying, I am studying a frontend course at Lexcion AB in Stockholm today, and looking for a job or an internship as frontend developer (open for banckend). Employers can apply 'New Start job'. Contact me if you are interested in my experiences, thanks!",
+      "My name is Ying, I am looking for an internship as frontend developer (open for banckend). Contact me if you are interested in my experiences, thanks!",
   },
 };
 const About = (props) => {
@@ -30,7 +30,7 @@ const About = (props) => {
             value={{ locale }}
           ></FormattedMessage>
         </h2>
-        <p className="mb-4">
+        <p className="mb-5">
           <FormattedMessage
             id="content"
             defaultMessage="some text"
