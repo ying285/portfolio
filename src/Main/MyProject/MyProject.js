@@ -1,6 +1,6 @@
 import React from "react";
 import WeatherPro from "./WeatherPro";
-import RestaurantPro from "./RestaurantPro";
+import DietmenuPro from "./DietmenuPro";
 import MatPro from "./MatPro";
 import Blog from "./Blog";
 import { IntlProvider, FormattedMessage } from "react-intl";
@@ -36,7 +36,7 @@ const MyProject = (props) => {
           <WeatherPro weatherProInfo={locale} />
         </div>
         <div className="col-md-6 col-lg-3">
-          <RestaurantPro restoProInfo={locale} />
+          <DietmenuPro restoProInfo={locale} />
         </div>
         <div className="col-md-6 col-lg-3">
           <Blog blogInfo={locale} />

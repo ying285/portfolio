@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { OverlayTrigger, Button, Tooltip, Modal } from "react-bootstrap";
-import resto_mobil from "./../../img/resto-mobil.jpg";
+import dietmenu from "./../../img/dietmenu.jpg";
 import { IntlProvider, FormattedMessage } from "react-intl";
 
 const message = {
   sv: {
     click: "klick för mer info",
-    button: "Resto",
-    title: "Restaurang applikation",
-    content: " En restaurangapplikation med kundvagn, byggd med Javascript",
+    button: "Dietmenu",
+    title: "Dietmenu applikation",
+    content: " En fin dietmenu App and byggd med React/redux, typescript",
     close_button: "Stäng",
     github_button: " Se koder i Github",
     netlify_button: "Se siten",
@@ -16,17 +16,16 @@ const message = {
 
   en: {
     click: "click for more info",
-    button: "Resto",
-    title: "Restaurant application",
-    content:
-      "A restaurant application with shopping cart, built with Javascript",
+    button: "Dietmenu",
+    title: "Dietmenu application",
+    content: "A dietmenu application and built with React/redux, typescript",
     close_button: "Close",
     github_button: " See codes in Github",
     netlify_button: "See the website",
   },
 };
 
-const RestaurantPro = (props) => {
+const DietmenuPro = (props) => {
   let locale = props.restoProInfo;
 
   const [show, setShow] = useState(false);
@@ -88,7 +87,7 @@ const RestaurantPro = (props) => {
             </p>
             <div className="text-center">
               <img
-                src={resto_mobil}
+                src={dietmenu}
                 alt="resto-desk"
                 style={{ width: "10rem", hight: "15rem" }}
               />
@@ -104,7 +103,7 @@ const RestaurantPro = (props) => {
             </Button>
             <Button
               variant="success"
-              href="https://github.com/ying285/team-project.git"
+              href="https://github.com/ying285/dietmenu"
               target="_blank"
             >
               <FormattedMessage
@@ -115,7 +114,7 @@ const RestaurantPro = (props) => {
             </Button>
             <Button
               variant="success"
-              href="https://myrestaurang.netlify.app/"
+              href="https://dietmenu.netlify.app/"
               target="_blank"
             >
               <FormattedMessage
@@ -131,4 +130,4 @@ const RestaurantPro = (props) => {
   );
 };
 
-export default RestaurantPro;
+export default DietmenuPro;
