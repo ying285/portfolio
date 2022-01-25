@@ -7,13 +7,13 @@ const message = {
   sv: {
     title: "Om mig",
     content:
-      "Jag heter Ying, söker efter en praktik plats som frontend utvecklare (öppen för backend). Kontakta mig om ni är intresserade av mina erfaranheter, tack!",
+      "Jag heter Ying, söker efter en ny chans som frontend utvecklare (öppen för MERN). Kontakta mig om ni är intresserade av mina erfaranheter, tack!",
   },
 
   en: {
     title: "About me",
     content:
-      "My name is Ying, I am looking for an internship as frontend developer (open for banckend). Contact me if you are interested in my experiences, thanks!",
+      "My name is Ying, I am looking for a new opportunity as frontend developer (open for MERN). Contact me if you are interested in my experiences, thanks!",
   },
 };
 const About = (props) => {
