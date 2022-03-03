@@ -30,7 +30,7 @@ const About = (props) => {
             value={{ locale }}
           ></FormattedMessage>
         </h2>
-        <p className="mb-5">
+        <p className="mb-5 fs-5">
           <FormattedMessage
             id="content"
             defaultMessage="some text"

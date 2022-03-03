@@ -1,17 +1,6 @@
 import React from "react";
-//import { IntlProvider } from "react-intl";
-
-// const message = {
-//   sv: {
-//     title: "välkomma till oss!",
-//   },
-//   en: {
-//     title: "welcome to us!",
-//   },
-// };
 
 const Select = (props) => {
-  // const [locale, setLocale] = useState("sv");
   const onChangeHandler = (e) => {
     props.changLang(e.target.value);
   };
