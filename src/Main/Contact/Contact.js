@@ -27,10 +27,7 @@ const Contact = (props) => {
       <ul className="row list-unstyled text-sm-start text-center mt-5">
         <li className="col-6 p-2">
           <i className="bi bi-geo-alt text-success">
-            <small className="text-white fs-5">
-              {" "}
-              Ekillavägen 19532 Märsta{" "}
-            </small>
+            <small className="text-white "> Ekillavägen 19532 Märsta </small>
           </i>
         </li>
         <li className="col-6 p-2">
@@ -38,7 +35,7 @@ const Contact = (props) => {
             <small className="ms-1">
               <a
                 href="mailto: ying285@hotmail.com"
-                className="text-decoration-none text-white fs-5"
+                className="text-decoration-none text-white"
               >
                 ying285@hotmail.com
               </a>
@@ -50,7 +47,7 @@ const Contact = (props) => {
             <small className="ms-1">
               <a
                 href="https://www.linkedin.com/in/wang-ying-a874a754/"
-                className="text-decoration-none text-white fs-5"
+                className="text-decoration-none text-white"
                 target="/_blank"
               >
                 linkedin
@@ -60,7 +57,7 @@ const Contact = (props) => {
         </li>
         <li className="col-6 p-2">
           <i className="bi bi-phone text-success">
-            <small className="text-white fs-5"> 076-288-1628 </small>
+            <small className="text-white"> 076-288-1628 </small>
           </i>
         </li>
       </ul>
